@@ -16,19 +16,105 @@ reg [3:0] nest_satte;
 
 // op code
 parameter 	ADD = 4'b0001,
-			SUB = 4'b0010,
-			NOR = 4'b0011,
-			MOVR= 4'b0100,
-			MOVA= 4'b0101,
-			JZRS= 4'b0110,
-			JZIM= 4'b0111,
-			JCRS= 4'b1000,
-			JCIM= 4'b1010,
-			SHL = 4'b1011,
-			SHR = 4'b1100,
-			LDIM= 4'b1101,
-			NOR = 4'b0000,
-			HALT= 4'b1111;
+parameter	SUB = 4'b0010,
+parameter	NOR = 4'b0011,
+parameter	MOVR= 4'b0100,
+parameter	MOVA= 4'b0101,
+parameter	JZRS= 4'b0110,
+parameter	JZIM= 4'b0111,
+parameter	JCRS= 4'b1000,
+parameter	JCIM= 4'b1010,
+parameter	SHL = 4'b1011,
+parameter	SHR = 4'b1100,
+parameter	LDIM= 4'b1101,
+parameter	NOP = 4'b0000,
+parameter	HALT= 4'b1111;
 
 // state code
-parameter 
+always @ （posedge clk) 
+begin 
+
+assign	LoadIR  = 1'b0;
+assign  IncPC   = 1'b0;
+assign  SelPC   = 1'b0;
+assign  LoadPC  = 1'b0;
+assign  LoadReg = 1'b0;
+assign  LoadAcc = 1'b0; 
+assign  SelACC  = 2'b00;
+assign  SelALU  = 4'b0000;
+	
+	
+case(opcode) 
+	ADD: 
+	begin 
+		assign LoadAcc = 1'b1;
+		assign SelACC  = 2'b10；
+		assign SelALU  = 4'b1000； 
+		assign LoadIR  = 1'b1;
+		assign IncPC   = 1'b1;
+	end 
+	
+	SUB: 
+	begin 
+		assign LoadAcc = 1'b1;
+		assign SelACC  = 2'b10；
+		assign SelALU  = 4'b1100； 
+		assign LoadIR  = 1'b1;
+		assign IncPC   = 1'b1;
+	end 
+	
+	NOR: 
+	begin 
+		assign LoadAcc = 1'b1;
+		assign SelACC  = 2'b10；
+		assign SelALU  = 4'b0100； 
+		assign LoadIR  = 1'b1;
+		assign IncPC   = 1'b1;
+	end 
+	
+	SHL: 
+	begin 
+		assign LoadAcc = 1'b1;
+		assign SelACC  = 2'b10；
+		assign SelALU  = 4'b0001； 
+		assign LoadIR  = 1'b1;
+		assign IncPC   = 1'b1;
+	end 
+	
+	SHR: 
+	begin 
+		assign LoadAcc = 1'b1;
+		assign SelACC  = 2'b10；
+		assign SelALU  = 4'b0011； 
+		assign LoadIR  = 1'b1;
+		assign IncPC   = 1'b1;
+	end 
+	
+	LDIM: 
+	begin 
+		assign LoadAcc = 1'b1;
+		assign SelACC  = 2'b00；
+		assign SelALU  = 4'b0010； 
+		assign LoadIR  = 1'b1;
+		assign IncPC   = 1'b1;
+	end 
+	
+	NOP: 
+	begin 
+		assign LoadIR  = 1'b1;
+		assign IncPC   = 1'b1;
+	end 
+	
+	HALT: 
+	begin 
+	end 
+endcase 
+	
+	
+	
+
+
+end 
+endmodule 
+	
+	
