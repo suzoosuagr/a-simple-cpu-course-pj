@@ -1,4 +1,4 @@
-module controller(z, c, clk, CLB, op, 
+module controller_v1(z, c, clk, CLB, op, 
 	LoadIR, IncPC, SelPC, LoadPC, 
 	LoadReg, LoadAcc, SelAcc, SelALU);
 // input define
