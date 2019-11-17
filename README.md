@@ -26,3 +26,16 @@ course project
 ## op codes
 
 [3:0][3:0] === [ops][reg/imm]
+
+## FSM diagram
+![sfm](./imgs/sfm.png)
+
+|State|Description|
+|---|---|
+|Sinit|initial state|
+|S0|read 8bit opcode|
+|S1|pc+1|
+|S2|update pc|
+|S3|update acc|
+|S4|update reg|
+|S5|HALT|
