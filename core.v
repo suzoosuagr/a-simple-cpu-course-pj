@@ -1,13 +1,15 @@
 // Core
 // Top-level
-module core(clk, CLB);
+module core(clk, CLB, pc, accum_value);
 input wire clk, CLB;
 
 wire LoadIR, IncPC, SelPC, LoadPC, LoadReg, LoadAcc, z, c;
 
 wire [1:0] SelAcc;
 wire [3:0] imm, reg_addr, op, SelALU;
-wire [7:0] ins, pc, rom_ins, reg_value, accum_value, alu_value;
+wire [7:0] ins, rom_ins, reg_value, alu_value;
+output wire [7:0] pc, accum_value;
+
 
 assign imm = reg_addr;
 
