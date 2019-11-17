@@ -17,7 +17,7 @@ assign zout = (result == 8'b0);
 parameter 	ADD = 4'b0001,
 			SUB = 4'b0010,
 			NOR = 4'b0011,
-			MOVR= 4'b0100,
+			//MOVR= 4'b0100,
 			SHL = 4'b1011,
 			SHR = 4'b1100;
 
