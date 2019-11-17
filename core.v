@@ -1,13 +1,14 @@
 // Core
 // Top-level
-module core(clk, CLB, pc, accum_value);
+module core(clk, CLB, pc, accum_value, ins);
 input wire clk, CLB;
+input wire [7:0] input_ins;
 
 wire LoadIR, IncPC, SelPC, LoadPC, LoadReg, LoadAcc, z, c;
 
 wire [1:0] SelAcc;
 wire [3:0] imm, reg_addr, op, SelALU;
-wire [7:0] ins, rom_ins, reg_value, alu_value;
+wire [7:0] ins, reg_value, alu_value;
 output wire [7:0] pc, accum_value;
 
 
@@ -15,9 +16,9 @@ assign imm = reg_addr;
 
 
 // Define connections
-rom ROM(.data(rom_ins), .addr(pc)); // read codes from testcodes.
+//rom ROM(.data(rom_ins), .addr(pc)); // read codes from testcodes.
 
-IR INS_REG(.I(ins), .clk(clk), .CLB(CLB), .LoadIR(LoadIR), .Instruction(rom_ins));
+IR INS_REG(.I(ins), .clk(clk), .CLB(CLB), .LoadIR(LoadIR), .Instruction(input_ins));
 
 demux DEMUX(.IR_in(ins), .op(op), .out(imm));
 
