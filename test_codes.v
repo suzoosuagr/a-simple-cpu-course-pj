@@ -1,6 +1,5 @@
 // ROM save the instructions
-module rom(data, addr, read, ena);
-input wire read, ena;
+module rom(data, addr);
 input wire [7:0] addr;
 output wire [7:0] data;
 
@@ -14,5 +13,5 @@ initial begin
 	// todo
 end
 
-assign data = (read&&ena)?memory[addr]:8'hzz;
+assign data = memory[addr];
 endmodule

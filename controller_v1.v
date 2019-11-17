@@ -1,13 +1,13 @@
 module controller(z, c, clk, CLB, op, 
 	LoadIR, IncPC, SelPC, LoadPC, 
-	LoadReg, LoadAcc, SelACC, SelALU);
+	LoadReg, LoadAcc, SelAcc, SelALU);
 // input define
 input wire z, c, clk, CLB;
 input wire [3:0] op;
 
 // output define
 output reg LoadIR, IncPC, SelPC, LoadPC, LoadReg, LoadAcc;
-output reg [1:0] SelACC;
+output reg [1:0] SelAcc;
 output reg [3:0] SelALU;
 
 // State code
@@ -87,7 +87,7 @@ always @* begin
 		LoadPC = 1'b0;
 		LoadReg = 1'b0;
 		LoadAcc = 1'b0;
-		SelACC <= 2'b00;
+		SelAcc <= 2'b00;
 		SelALU <= 4'b0000;
 	end
 	S0: begin
@@ -97,7 +97,7 @@ always @* begin
 		LoadPC  = 1'b0;
 		LoadReg = 1'b0;
 		LoadAcc = 1'b0;
-		SelACC <= 2'b00;
+		SelAcc <= 2'b00;
 		SelALU <= 4'b00;
 	end
 	S1: begin
@@ -107,7 +107,7 @@ always @* begin
 		LoadPC = 1'b0;
 		LoadReg = 1'b0;
 		LoadAcc = 1'b0;
-		SelACC <= 2'b00;
+		SelAcc <= 2'b00;
 		SelALU <= 4'b0000;
 	end
 
@@ -123,7 +123,7 @@ always @* begin
 		LoadPC = 1'b1;      // write PC value
 		LoadReg = 1'b0;
 		LoadACC = 1'b0;
-		SelACC <= 2'b00;
+		SelAcc <= 2'b00;
 		SelALU <= 4'b0000;
 	end
 	S3: begin
@@ -134,13 +134,13 @@ always @* begin
 		LoadReg = 1'b0;
 		LoadACC = 1'b1;    // write ACC value
 		case(op)
-		ADD: SelACC <= 2'b00; // selacc1 = 0 select the ALU value
-		SUB: SelACC <= 2'b00;
-		NOR: SelACC <= 2'b00;
-		MOVR:SelACC <= 2'b10; // using reg and skip alu. 
-		SHL: SelACC <= 2'b00;
-		SHR: SelACC <= 2'b00;
-		LDIM:SelACC <= 2'b11; // using imm and skip alu.
+		ADD: SelAcc <= 2'b00; // SelAcc1 = 0 select the ALU value
+		SUB: SelAcc <= 2'b00;
+		NOR: SelAcc <= 2'b00;
+		MOVR:SelAcc <= 2'b10; // using reg and skip alu. 
+		SHL: SelAcc <= 2'b00;
+		SHR: SelAcc <= 2'b00;
+		LDIM:SelAcc <= 2'b11; // using imm and skip alu.
 		endcase
 		SelALU <= op;
 	end
@@ -151,7 +151,7 @@ always @* begin
 		LoadPC = 1'b0;
 		LoadReg = 1'b1; // write Reg
 		LoadACC = 1'b0;
-		SelACC  <= 2'b00;
+		SelAcc  <= 2'b00;
 		SelALU  <= 4'b0000;
 	end
 	S5: begin
@@ -161,7 +161,7 @@ always @* begin
 		LoadPC = 1'b0;
 		LoadReg = 1'b0;
 		LoadAcc = 1'b0;
-		SelACC <= 2'b00;
+		SelAcc <= 2'b00;
 		SelALU <= 4'b0000;
 	end
 
