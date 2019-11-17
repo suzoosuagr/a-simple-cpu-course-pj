@@ -26,7 +26,7 @@ always @(accum or alu_in or alu_sel) begin
 	ADD: Result <= accum + alu_in;
 	SUB: Result <= accum - alu_in;
 	NOR: Reulst <= ~(a|b);
-	MOVR:Result <= alu_in;
+	// MOVR:Result <= alu_in;
 	SHL: Result <= accum << 1;
 	SHR: Result <= accum >> 1;
 	default: Result <= 9'bzzzzzzzzz;
