@@ -1,6 +1,6 @@
 // Core
 // Top-level
-module core(clk, CLB, pc, accum_value, ins);
+module core(clk, CLB, pc, accum_value, input_ins);
 input wire clk, CLB;
 input wire [7:0] input_ins;
 
