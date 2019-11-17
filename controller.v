@@ -78,4 +78,92 @@ always @* begin
 end 
  
 // output logic
+always @* begin
+	case(state)
+	Sinit: begin
+		LoadIR = 1'b0;
+		IncPC = 1'b0;
+		SelPC = 1'b0;
+		LoadPC = 1'b0;
+		LoadReg = 1'b0;
+		LoadAcc = 1'b0;
+		SelACC <= 2'b00;
+		SelALU <= 4'b0000;
+	end
+	S0: begin
+		LoadIR = 1'b1; // read IR.
+		IncPC   = 1'b0;
+		SelPC   = 1'b0;
+		LoadPC  = 1'b0;
+		LoadReg = 1'b0;
+		LoadAcc = 1'b0;
+		SelACC <= 2'b00;
+		SelALU <= 4'b00;
+	end
+	S1: begin
+		LoadIR = 1'b0;
+		IncPC  = 1'b1; // pc += 1
+		SelPC  = 1'b0;
+		LoadPC = 1'b0;
+		LoadReg = 1'b0;
+		LoadAcc = 1'b0;
+		SelACC <= 2'b00;
+		SelALU <= 4'b0000;
+	end
 
+	S2: begin
+		LoadIR = 1'b0;
+		IncPC  = 1'b0;		// load means write, sel select the bus. 
+		case(op)			// determin which part used in 
+		JZRS: SelPC = 1'b1;
+		JZIM: SelPC = 1'b0;
+		JCRS: SelPC = 1'b1;
+		JCIM: SelPC = 1'b0;
+		endcase
+		LoadPC = 1'b1;      // write PC value
+		LoadReg = 1'b0;
+		LoadACC = 1'b0;
+		SelACC <= 2'b00;
+		SelALU <= 4'b0000;
+	end
+	S3: begin
+		LoadIR = 1'b0;
+		IncPC  = 1'b0;
+		SelPC  = 1'b0;
+		LoadPC = 1'b0;
+		LoadReg = 1'b0;
+		LoadACC = 1'b1;    // write ACC value
+		case(op)
+		ADD: SelACC <= 2'b00; // selacc1 = 0 select the ALU value
+		SUB: SelACC <= 2'b00;
+		NOR: SelACC <= 2'b00;
+		MOVR:SelACC <= 2'b10; // using reg and skip alu. 
+		SHL: SelACC <= 2'b00;
+		SHR: SelACC <= 2'b00;
+		LDIM:SelACC <= 2'b11; // using imm and skip alu.
+		endcase
+		SelALU <= op;
+	end
+	S4: begin
+		LoadIR = 1'b0;
+		IncPC  = 1'b0;
+		SelPC  = 1'b0;
+		LoadPC = 1'b0;
+		LoadReg = 1'b1; // write Reg
+		LoadACC = 1'b0;
+		SelACC  <= 2'b00;
+		SelALU  <= 4'b0000;
+	end
+	S5: begin
+		LoadIR = 1'b0;
+		IncPC  = 1'b0;
+		SelPC  = 1'b0;
+		LoadPC = 1'b0;
+		LoadReg = 1'b0;
+		LoadAcc = 1'b0;
+		SelACC <= 2'b00;
+		SelALU <= 4'b0000;
+	end
+
+end
+endmodule
