@@ -31,12 +31,12 @@ parameter 	ADD = 4'b0001,
 			HALT= 4'b1111;
 
 // state code
-parameter 	Sinit = 3'b111; // initial
-			S0    = 3'b000; // read opcodes
-			S1    = 3'b001;	// pc+1
-			S2    = 3'b010; // update pc
-			S3    = 3'b011;	// update 
-			S4    = 3'b100;	// update reg
+parameter 	Sinit = 3'b111, // initial
+			S0    = 3'b000, // read opcodes
+			S1    = 3'b001,	// pc+1
+			S2    = 3'b010, // update pc
+			S3    = 3'b011,	// update 
+			S4    = 3'b100,	// update reg
 			S5    = 3'b101;	// halt
 
 // state reg
