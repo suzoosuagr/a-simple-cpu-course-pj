@@ -12,7 +12,7 @@ wire [7:0] ins, reg_value, alu_value;
 output wire [7:0] pc, accum_value;
 
 
-assign imm = reg_addr;
+assign reg_addr = imm;
 
 
 // Define connections

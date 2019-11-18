@@ -38,7 +38,7 @@ parameter 	Sinit = 3'b000, // initial changed to 000
 			S0    = 3'b111, // read opcodes changed to 111
 			S1    = 3'b001,	// pc+1
 			S2    = 3'b010, // update pc
-			S3    = 3'b011,	// update 
+			S3    = 3'b011,	// update acc
 			S4    = 3'b100,	// update reg
 			S5    = 3'b101;	// halt
 
