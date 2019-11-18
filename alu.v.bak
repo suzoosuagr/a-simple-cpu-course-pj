@@ -25,7 +25,7 @@ always @(accum or alu_in or alu_sel) begin
 	case(alu_sel)
 	ADD: Result <= accum + alu_in;
 	SUB: Result <= accum - alu_in;
-	NOR: Result <= ~(accum|alu_in);
+	NOR: Reulst <= ~(a|b);
 	// MOVR:Result <= alu_in;
 	SHL: Result <= accum << 1;
 	SHR: Result <= accum >> 1;
