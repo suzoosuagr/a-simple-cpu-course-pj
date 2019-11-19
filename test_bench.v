@@ -20,14 +20,13 @@ assign expected = memory[address][15:0];
 
 initial
 begin
-	$readmemb("test_code.txt", memory);
+	$readmemh("test_commands.txt", memory);
 	clk = 0;
 	clb = 0;
 	address = 0;
 	#10;
 	clb = 1;
-	
-	#250 $stop;
+	#2500 $stop;
 end
 
 always begin
@@ -39,9 +38,9 @@ always @(posedge clk) begin
 
 	// TODO:
 	if(expected !=={acc,pc} || expected === 16'bx)
-	 	$error("op=%b, imm=%b, expected=%b, received=%b\n",op, imm, expected, {acc, pc});
+		$error("op=%b, imm=%b, expected=%b, received=%b\n",op, imm, expected, {acc, pc});
 	else
-	 	$display($time, "op=%b, imm=%b, result=%b\n", op, imm, {acc, pc});
+		$display($time, "op=%b, imm=%b, result=%b\n", op, imm, {acc, pc});
 	
 end
 

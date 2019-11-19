@@ -71,7 +71,7 @@ always @* begin
 		default:next_state = Sinit; // non exist opcode, initial whole system
 		endcase
 		end
-	S2: next_state = S0;
+	S2: next_state = S1;
 	S3: next_state = S0;
 	S4: next_state = S0;
 	S5: next_state = S5;
