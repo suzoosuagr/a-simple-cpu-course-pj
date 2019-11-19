@@ -1,0 +1,2 @@
+000000 // Initial	
+D40001 // LD ACC IMM(0100)

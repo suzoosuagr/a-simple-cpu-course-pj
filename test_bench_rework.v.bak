@@ -9,18 +9,18 @@ reg clb;
 wire [7:0] acc;
 wire [7:0] pc;
 wire [7:0] ir;
-wire [7:0] op;
-wire [7:0] imm;
+//wire [7:0] op;
+//wire [7:0] imm;
 wire [15:0] expected;
 
 assign ir = memory[address][23:16];
-assign op = memory[address][23:20];
-assign imm = memory[address][19:16];
+//assign op = memory[address][23:20];
+//assign imm = memory[address][19:16];
 assign expected = memory[address][15:0];
 
 initial
 begin
-	$readmemb("test_code.txt", memory);
+	$readmemh("test_commands.txt", memory);
 	clk = 0;
 	clb = 0;
 	address = 0;
