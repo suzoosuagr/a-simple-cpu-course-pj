@@ -35,7 +35,7 @@ parameter 	        ADD = 4'b0001,
 
 // state code
 parameter 	Sinit = 3'b000, // initial changed to 000
-			//S0    = 3'b111, // read opcodes changed to 111
+			S0    = 3'b111, // read opcodes changed to 111
 			S1    = 3'b001,	// pc+1
 			S2    = 3'b010, // update pc
 			S3    = 3'b011,	// update acc
@@ -51,7 +51,7 @@ end
 // state logic
 always @* begin
 	case(state)
-	//S0: next_state = S1; // *****
+	S0: next_state = S1; // *****
 	S1: begin
 		case(op)
 		ADD: next_state = S3;
@@ -66,16 +66,16 @@ always @* begin
 		SHL: next_state = S3;
 		SHR: next_state = S3;
 		LDIM:next_state = S3;
-		NOP: next_state = S1; // *****
+		NOP: next_state = S0; // *****
 		HALT:next_state = S5;
 		default:next_state = Sinit; // non exist opcode, initial whole system
 		endcase
 		end
-	S2: next_state = S1;
-	S3: next_state = S1;
-	S4: next_state = S1;
+	S2: next_state = S0;
+	S3: next_state = S0;
+	S4: next_state = S0;
 	S5: next_state = S5;
-	Sinit: next_state = S1;
+	Sinit: next_state = S0;
 	default: next_state = Sinit; // when state run over, initial whole process. 
 	endcase
 end 
@@ -84,7 +84,7 @@ end
 always @* begin
 	case(state)
 	Sinit: begin
-		LoadIR = 1'b1;//*
+		LoadIR = 1'b0;//*
 		IncPC = 1'b0;
 		SelPC = 1'b0;
 		LoadPC = 1'b0;
@@ -93,19 +93,19 @@ always @* begin
 		SelAcc <= 2'b00;
 		SelALU <= 4'b0000;
 	end
-	//S0: begin
-	//	LoadIR = 1'b1; // read IR.
-	//	IncPC   = 1'b0;
-	//	SelPC   = 1'b0;
-	//	LoadPC  = 1'b0;
-	//	LoadReg = 1'b0;
-	//	LoadAcc = 1'b0;
-	//	SelAcc <= 2'b00;
-	//	SelALU <= 4'b00;
-	//end
+	S0: begin
+		LoadIR = 1'b1; // read IR.
+		IncPC   = 1'b1;
+		SelPC   = 1'b0;
+		LoadPC  = 1'b0;
+		LoadReg = 1'b0;
+		LoadAcc = 1'b0;
+		SelAcc <= 2'b00;
+		SelALU <= 4'b00;
+	end
 	S1: begin
-		LoadIR = 1'b1;	// Load IR
-		IncPC  = 1'b1; // pc += 1
+		LoadIR = 1'b0;	
+		IncPC  = 1'b0; // pc += 1
 		SelPC  = 1'b0;
 		LoadPC = 1'b0;
 		LoadReg = 1'b0;

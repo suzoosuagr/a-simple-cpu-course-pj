@@ -9,26 +9,26 @@ z2
 cModel Technology
 Z0 dC:/intelFPGA/CSE664_course_pj
 vaccum
-Z1 !s110 1574128033
+Z1 !s110 1574132059
 !i10b 1
-!s100 2lF50NRVVR<a>[16ij4je1
-I0J3cBCoPd8UXAz8;7YP9k2
+!s100 eKQ3ob<?oW^R_O`MCASfF0
+I;YBW6@5VjekM<V<eZOg1]1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1574099000
+w1574130243
 8C:/intelFPGA/CSE664_course_pj/accum.v
 FC:/intelFPGA/CSE664_course_pj/accum.v
 L0 2
-Z4 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1574128033.000000
+Z4 !s108 1574132059.000000
 !s107 C:/intelFPGA/CSE664_course_pj/accum.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/accum.v|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+Z5 o-work work
+Z6 tCvgOpt 0
 valu
 R1
 !i10b 1
@@ -40,37 +40,37 @@ w1574099002
 8C:/intelFPGA/CSE664_course_pj/alu.v
 FC:/intelFPGA/CSE664_course_pj/alu.v
 L0 2
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 C:/intelFPGA/CSE664_course_pj/alu.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/alu.v|
 !i113 1
+R5
 R6
-R7
 vcontroller_v1
 R1
 !i10b 1
-!s100 ^jP17z]DRICND35YD=EZi1
-IL6VMl<Xf:?ZTW@NMB<QPf3
+!s100 BWeRc2V[g2[46YZlo<1>93
+I5g@Cl97H[gP@l?:<G5k?k2
 R2
 R0
-w1574128007
+w1574132042
 8C:/intelFPGA/CSE664_course_pj/controller_v1.v
 FC:/intelFPGA/CSE664_course_pj/controller_v1.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 C:/intelFPGA/CSE664_course_pj/controller_v1.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/controller_v1.v|
 !i113 1
+R5
 R6
-R7
 vcore
 R1
 !i10b 1
@@ -82,16 +82,16 @@ w1574099004
 8C:/intelFPGA/CSE664_course_pj/core.v
 FC:/intelFPGA/CSE664_course_pj/core.v
 L0 3
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 C:/intelFPGA/CSE664_course_pj/core.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/core.v|
 !i113 1
+R5
 R6
-R7
 vdemux
 R1
 !i10b 1
@@ -99,65 +99,65 @@ R1
 IIo2Bm87I8EglmXMg75FJO0
 R2
 R0
-Z8 w1574027621
+Z7 w1574027621
 8C:/intelFPGA/CSE664_course_pj/demux.v
 FC:/intelFPGA/CSE664_course_pj/demux.v
 L0 2
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 C:/intelFPGA/CSE664_course_pj/demux.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/demux.v|
 !i113 1
+R5
 R6
-R7
 vIR
-Z9 !s110 1574128034
+R1
 !i10b 1
 !s100 2;>PV:OlA7gnP8>a?m4iQ3
 IVQUd12?KL^Q4^:K?Bb3Km1
 R2
 R0
-R8
+R7
 8C:/intelFPGA/CSE664_course_pj/IR.v
 FC:/intelFPGA/CSE664_course_pj/IR.v
 L0 2
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 C:/intelFPGA/CSE664_course_pj/IR.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/IR.v|
 !i113 1
+R5
 R6
-R7
 n@i@r
 vprogram_counter
-R9
+R1
 !i10b 1
 !s100 3Og4g15QLE;@bnl653QVn3
 IWdmI;U<4h1kc3=2fE0oAK0
 R2
 R0
-R3
+w1574099000
 8C:/intelFPGA/CSE664_course_pj/program_counter.v
 FC:/intelFPGA/CSE664_course_pj/program_counter.v
 L0 2
-R4
+R3
 r1
 !s85 0
 31
-Z10 !s108 1574128034.000000
+R4
 !s107 C:/intelFPGA/CSE664_course_pj/program_counter.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/program_counter.v|
 !i113 1
+R5
 R6
-R7
 vreg_file
-R9
+R1
 !i10b 1
 !s100 honEI<z<YPm<`m_@AZY_62
 IIY[SiGEVIU6DGLggn5iK[2
@@ -167,16 +167,16 @@ w1574099001
 8C:/intelFPGA/CSE664_course_pj/register_file.v
 FC:/intelFPGA/CSE664_course_pj/register_file.v
 L0 2
-R4
+R3
 r1
 !s85 0
 31
-R10
+R4
 !s107 C:/intelFPGA/CSE664_course_pj/register_file.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/register_file.v|
 !i113 1
+R5
 R6
-R7
 vrom
 !s110 1574097921
 !i10b 1
@@ -188,7 +188,7 @@ w1574028177
 8C:/intelFPGA/CSE664_course_pj/test_codes.v
 FC:/intelFPGA/CSE664_course_pj/test_codes.v
 L0 2
-R4
+R3
 r1
 !s85 0
 31
@@ -196,26 +196,26 @@ r1
 !s107 C:/intelFPGA/CSE664_course_pj/test_codes.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/test_codes.v|
 !i113 1
+R5
 R6
-R7
 vtest_bench
-R9
+R1
 !i10b 1
 !s100 @3?L[E]CQl[a3T3miXalU1
 INS=GkI?o[SNSHb6^7b8U52
 R2
 R0
-w1574128022
+w1574130417
 8C:/intelFPGA/CSE664_course_pj/test_bench.v
 FC:/intelFPGA/CSE664_course_pj/test_bench.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R10
+R4
 !s107 C:/intelFPGA/CSE664_course_pj/test_bench.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/test_bench.v|
 !i113 1
+R5
 R6
-R7

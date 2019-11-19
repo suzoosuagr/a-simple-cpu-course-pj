@@ -23,6 +23,7 @@ always @(posedge clk or CLB) begin
 			2'b01: Data <= alu_in;
 			2'b10: Data <= reg_in;
 			2'b11: Data <= {4'b0000, imm};
+			default: Data <= Data;
 			endcase
 		// din <= sel_acc[0]?{4'b0000, imm}:reg_in;
 		// din <= sel_acc[1]?din:alu_in;

@@ -27,7 +27,7 @@ begin
 	#10;
 	clb = 1;
 	
-	#2500 $stop;
+	#250 $stop;
 end
 
 always begin
@@ -35,11 +35,14 @@ always begin
 end 
 
 always @(posedge clk) begin
-	address <= pc;
-	// if(expected !=={acc,pc} || expected === 16'bx)
-	// 	$error("op=%b, imm=%b, expected=%b, received=%b\n",op, imm, expected, {acc, pc});
-	// else
-	// 	$display($time, "op=%b, imm=%b, result=%b\n", op, imm, {acc, pc});
+	address <= pc; // pipe between pc and address , DO NOT CHANGE.
+
+	// TODO:
+	if(expected !=={acc,pc} || expected === 16'bx)
+	 	$error("op=%b, imm=%b, expected=%b, received=%b\n",op, imm, expected, {acc, pc});
+	else
+	 	$display($time, "op=%b, imm=%b, result=%b\n", op, imm, {acc, pc});
+	
 end
 
 core topmodule(
