@@ -26,7 +26,7 @@ begin
 	address = 0;
 	#10;
 	clb = 1;
-	#2500 $stop;
+	#500 $stop;
 end
 
 always begin

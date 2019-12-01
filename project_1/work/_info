@@ -9,26 +9,26 @@ z2
 cModel Technology
 Z0 dC:/intelFPGA/CSE664_course_pj
 vaccum
-Z1 !s110 1574137919
+Z1 !s110 1574138787
 !i10b 1
 !s100 eKQ3ob<?oW^R_O`MCASfF0
 I;YBW6@5VjekM<V<eZOg1]1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1574135261
+Z3 w1574138042
 8C:/intelFPGA/CSE664_course_pj/accum.v
 FC:/intelFPGA/CSE664_course_pj/accum.v
 L0 2
-Z3 OV;L;10.5b;63
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1574137919.000000
+Z5 !s108 1574138787.000000
 !s107 C:/intelFPGA/CSE664_course_pj/accum.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/accum.v|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+Z6 o-work work
+Z7 tCvgOpt 0
 valu
 R1
 !i10b 1
@@ -40,16 +40,16 @@ w1574099002
 8C:/intelFPGA/CSE664_course_pj/alu.v
 FC:/intelFPGA/CSE664_course_pj/alu.v
 L0 2
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 C:/intelFPGA/CSE664_course_pj/alu.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/alu.v|
 !i113 1
-R5
 R6
+R7
 vcontroller_v1
 R1
 !i10b 1
@@ -57,20 +57,20 @@ R1
 IDEc]jKknGKI878Ph?jaUh2
 R2
 R0
-w1574137153
+R3
 8C:/intelFPGA/CSE664_course_pj/controller_v1.v
 FC:/intelFPGA/CSE664_course_pj/controller_v1.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 C:/intelFPGA/CSE664_course_pj/controller_v1.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/controller_v1.v|
 !i113 1
-R5
 R6
+R7
 vcore
 R1
 !i10b 1
@@ -82,16 +82,16 @@ w1574099004
 8C:/intelFPGA/CSE664_course_pj/core.v
 FC:/intelFPGA/CSE664_course_pj/core.v
 L0 3
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 C:/intelFPGA/CSE664_course_pj/core.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/core.v|
 !i113 1
-R5
 R6
+R7
 vdemux
 R1
 !i10b 1
@@ -99,20 +99,20 @@ R1
 IIo2Bm87I8EglmXMg75FJO0
 R2
 R0
-Z7 w1574027621
+w1574027621
 8C:/intelFPGA/CSE664_course_pj/demux.v
 FC:/intelFPGA/CSE664_course_pj/demux.v
 L0 2
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 C:/intelFPGA/CSE664_course_pj/demux.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/demux.v|
 !i113 1
-R5
 R6
+R7
 vIR
 R1
 !i10b 1
@@ -120,20 +120,20 @@ R1
 IVQUd12?KL^Q4^:K?Bb3Km1
 R2
 R0
-R7
+w1574138045
 8C:/intelFPGA/CSE664_course_pj/IR.v
 FC:/intelFPGA/CSE664_course_pj/IR.v
 L0 2
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 C:/intelFPGA/CSE664_course_pj/IR.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/IR.v|
 !i113 1
-R5
 R6
+R7
 n@i@r
 vprogram_counter
 R1
@@ -146,16 +146,16 @@ w1574099000
 8C:/intelFPGA/CSE664_course_pj/program_counter.v
 FC:/intelFPGA/CSE664_course_pj/program_counter.v
 L0 2
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 C:/intelFPGA/CSE664_course_pj/program_counter.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/program_counter.v|
 !i113 1
-R5
 R6
+R7
 vreg_file
 R1
 !i10b 1
@@ -167,16 +167,16 @@ w1574099001
 8C:/intelFPGA/CSE664_course_pj/register_file.v
 FC:/intelFPGA/CSE664_course_pj/register_file.v
 L0 2
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 C:/intelFPGA/CSE664_course_pj/register_file.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/register_file.v|
 !i113 1
-R5
 R6
+R7
 vrom
 !s110 1574097921
 !i10b 1
@@ -188,7 +188,7 @@ w1574028177
 8C:/intelFPGA/CSE664_course_pj/test_codes.v
 FC:/intelFPGA/CSE664_course_pj/test_codes.v
 L0 2
-R3
+R4
 r1
 !s85 0
 31
@@ -196,26 +196,26 @@ r1
 !s107 C:/intelFPGA/CSE664_course_pj/test_codes.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/test_codes.v|
 !i113 1
-R5
 R6
+R7
 vtest_bench
 R1
 !i10b 1
-!s100 8dDeG7?lTgUfc7QdcJ`4Q2
-IB0KN7o8hokUKhO`h3_2dB1
+!s100 ofkMAGEaSk1XK9^J10aJP2
+IDB9V8Lzjm@zW`_ZM^6^NA0
 R2
 R0
-w1574137899
+w1574138768
 8C:/intelFPGA/CSE664_course_pj/test_bench.v
 FC:/intelFPGA/CSE664_course_pj/test_bench.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 C:/intelFPGA/CSE664_course_pj/test_bench.v|
 !s90 -reportprogress|300|-work|work|C:/intelFPGA/CSE664_course_pj/test_bench.v|
 !i113 1
-R5
 R6
+R7
