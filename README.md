@@ -2,6 +2,7 @@
 
 # CONTENTS
 - [x] [Project_1](./project_1/)
-- [ ] [Lab4](./Lab4/)
+- [x] [LAB4_ZMO](./Lab4_ZMO/)
+- [x] [Lab4_JW](./Lab4_JW/)
 - [ ] [Lab4b](./Lab4b/)
 - [ ] [Lab5](./Lab5/)
