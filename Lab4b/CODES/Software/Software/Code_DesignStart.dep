@@ -1,0 +1,2 @@
+Dependencies for Project 'Code', Target 'DesignStart': (DO NOT MODIFY !)
+F (.\cmdsasm.s)(0x5DEA0F04)(--cpu Cortex-M3 --li --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_DesignStart-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM3\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 526" --pd "ARMCM3 SETA 1"-o .\cmdsasm.o --depend .\cmdsasm.d)

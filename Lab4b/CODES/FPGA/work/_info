@@ -1,0 +1,572 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA/lab4b/FPGA
+T_opt
+!s110 1575615598
+Vc<Aj0M?>;f@@X:YDZn9Oo2
+Z1 04 9 4 work testbench fast 0
+=1-7085c2a79840-5de9fc6d-3d6-481c
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.5;63
+T_opt1
+!s110 1575529743
+VdSbg^kCNm<foSGLgA08<o1
+R1
+=1-7085c2a79840-5de8ad0d-323-4778
+o-quiet -auto_acc_if_foreign -work work
+R2
+n@_opt1
+R3
+R0
+vAHB2LED
+!s110 1575257900
+!i10b 1
+!s100 bXaD[gQU`?R4bz]aj`YD]2
+I`0`_nEd=56>iB5YAXEVbd1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z5 w1379359812
+8C:/intelFPGA/lab4b/FPGA/AHB_LED/AHB2LED.v
+FC:/intelFPGA/lab4b/FPGA/AHB_LED/AHB2LED.v
+L0 1
+Z6 OL;L;10.5;63
+r1
+!s85 0
+31
+!s108 1575257900.000000
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_LED/AHB2LED.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_LED/AHB2LED.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@a@h@b2@l@e@d
+vAHB2MEM
+!s110 1575257911
+!i10b 1
+!s100 38CN<6AJl3C0NC[_]6jN10
+I_BE`VPIIeNG5`UndMElgW2
+R4
+R0
+w1534086375
+8C:/intelFPGA/lab4b/FPGA/AHB_BRAM/AHB2BRAM.v
+FC:/intelFPGA/lab4b/FPGA/AHB_BRAM/AHB2BRAM.v
+L0 11
+R6
+r1
+!s85 0
+31
+!s108 1575257911.000000
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_BRAM/AHB2BRAM.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_BRAM/AHB2BRAM.v|
+!i113 0
+R7
+R2
+n@a@h@b2@m@e@m
+vAHB7SEGDEC
+!s110 1575257914
+!i10b 1
+!s100 <e=gSQ:T>6GM:g<WEGn>62
+IzzUDG:0Im96FMB:jiK4R72
+R4
+R0
+w1381778628
+8C:/intelFPGA/lab4b/FPGA/AHB_7SEG/AHB7SEGDEC.v
+FC:/intelFPGA/lab4b/FPGA/AHB_7SEG/AHB7SEGDEC.v
+Z8 L0 38
+R6
+r1
+!s85 0
+31
+!s108 1575257914.000000
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_7SEG/AHB7SEGDEC.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_7SEG/AHB7SEGDEC.v|
+!i113 0
+R7
+R2
+n@a@h@b7@s@e@g@d@e@c
+vAHBDCD
+Z9 !s110 1575257907
+!i10b 1
+!s100 z<Y6<GDJoASbOV@moz19b2
+ImAi1hS_NG3h3We:[YnYPP2
+R4
+R0
+w1500405874
+8C:/intelFPGA/lab4b/FPGA/AHB_BUS/AHBDCD.v
+FC:/intelFPGA/lab4b/FPGA/AHB_BUS/AHBDCD.v
+R8
+R6
+r1
+!s85 0
+31
+Z10 !s108 1575257907.000000
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_BUS/AHBDCD.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_BUS/AHBDCD.v|
+!i113 0
+R7
+R2
+n@a@h@b@d@c@d
+vAHBGPIO
+!s110 1575257904
+!i10b 1
+!s100 HN3IT[F<jhXi@^^8mOPbE0
+ITOz7ZjbifNYW<B]0h@b?H1
+R4
+R0
+w1500663484
+8C:/intelFPGA/lab4b/FPGA/AHB_GPIO/AHBGPIO.v
+FC:/intelFPGA/lab4b/FPGA/AHB_GPIO/AHBGPIO.v
+R8
+R6
+r1
+!s85 0
+31
+!s108 1575257904.000000
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_GPIO/AHBGPIO.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_GPIO/AHBGPIO.v|
+!i113 0
+R7
+R2
+n@a@h@b@g@p@i@o
+vAHBMUX
+R9
+!i10b 1
+!s100 BkhHPT[Tz:;CK^b=G_>3Z2
+Idmj2A2TWo[oemPA>42AP21
+R4
+R0
+R5
+8C:/intelFPGA/lab4b/FPGA/AHB_BUS/AHBMUX.v
+FC:/intelFPGA/lab4b/FPGA/AHB_BUS/AHBMUX.v
+R8
+R6
+r1
+!s85 0
+31
+R10
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_BUS/AHBMUX.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_BUS/AHBMUX.v|
+!i113 0
+R7
+R2
+n@a@h@b@m@u@x
+vAHBTIMER
+!s110 1575615593
+!i10b 1
+!s100 afZC2FLaiZ_GF_JjAPFTL0
+Im;eVW`Y<nK>IdLDWJQOD52
+R4
+R0
+w1575615577
+8C:/intelFPGA/lab4b/FPGA/AHB_TIMER/AHBTIMER.v
+FC:/intelFPGA/lab4b/FPGA/AHB_TIMER/AHBTIMER.v
+R8
+R6
+r1
+!s85 0
+31
+!s108 1575615593.000000
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_TIMER/AHBTIMER.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_TIMER/AHBTIMER.v|
+!i113 0
+R7
+R2
+n@a@h@b@t@i@m@e@r
+vAHBUART
+!s110 1575612317
+!i10b 1
+!s100 YJg8KTE`WaPFBzXcnMAWX3
+IYYlF;lQZWQVGaG4Ld<^7D2
+R4
+R0
+w1575612167
+8C:/intelFPGA/lab4b/FPGA/AHB_UART/AHBUART.v
+FC:/intelFPGA/lab4b/FPGA/AHB_UART/AHBUART.v
+R8
+R6
+r1
+!s85 0
+31
+!s108 1575612317.000000
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_UART/AHBUART.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_UART/AHBUART.v|
+!i113 0
+R7
+R2
+n@a@h@b@u@a@r@t
+vAHBVGA
+Z11 !s110 1575257885
+!i10b 1
+!s100 Ig9N13PmMDSeeG:6=Akd:0
+Ig>AM@MQY]BbCNT>@b`g>O1
+R4
+R0
+w1381782748
+8C:/intelFPGA/lab4b/FPGA/AHB_VGA/AHBVGASYS.v
+FC:/intelFPGA/lab4b/FPGA/AHB_VGA/AHBVGASYS.v
+R8
+R6
+r1
+!s85 0
+31
+Z12 !s108 1575257885.000000
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_VGA/AHBVGASYS.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_VGA/AHBVGASYS.v|
+!i113 0
+R7
+R2
+n@a@h@b@v@g@a
+vARMSOC_TOP
+Z13 !s110 1575612309
+!i10b 1
+!s100 NbAU50Ni07cLEYRNRW]RO3
+IaXmQJ2KfPU<>UT^J0nQlW3
+R4
+R0
+Z14 w1575612102
+Z15 8C:/intelFPGA/lab4b/FPGA/ARMSOC_TOP.v
+Z16 FC:/intelFPGA/lab4b/FPGA/ARMSOC_TOP.v
+Z17 L0 37
+R6
+r1
+!s85 0
+31
+Z18 !s108 1575612309.000000
+Z19 !s107 C:/intelFPGA/lab4b/FPGA/ARMSOC_TOP.v|
+Z20 !s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/ARMSOC_TOP.v|
+!i113 0
+R7
+R2
+n@a@r@m@s@o@c_@t@o@p
+vBAUDGEN
+Z21 !s110 1575257891
+!i10b 1
+!s100 Zh3>_hzIJWNWP@`S?D>IL1
+IOR<aaKKQ4ZUEdQk;jhmJ>3
+R4
+R0
+w1381418072
+8C:/intelFPGA/lab4b/FPGA/AHB_UART/baudgen.v
+FC:/intelFPGA/lab4b/FPGA/AHB_UART/baudgen.v
+R17
+R6
+r1
+!s85 0
+31
+Z22 !s108 1575257891.000000
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_UART/baudgen.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_UART/baudgen.v|
+!i113 0
+R7
+R2
+n@b@a@u@d@g@e@n
+vBUFG
+R13
+!i10b 1
+!s100 ;:?J:I0ekkAbemH8kaePG2
+I>XaL[?:4HVi[Nn?3N964h0
+R4
+R0
+R14
+R15
+R16
+L0 568
+R6
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 0
+R7
+R2
+n@b@u@f@g
+vcortexm3ds_logic
+Z23 !s110 1575257878
+!i10b 1
+!s100 FajPZUcciPkK<g<ZSVTMa0
+I^K7OFC>9OLjh]89hO[>ng2
+R4
+R0
+w1500376680
+8C:/intelFPGA/lab4b/FPGA/CortexM3-DS/cortexm3ds_logic.v
+FC:/intelFPGA/lab4b/FPGA/CortexM3-DS/cortexm3ds_logic.v
+L0 27
+R6
+r1
+!s85 0
+31
+!s108 1575257877.000000
+!s107 C:/intelFPGA/lab4b/FPGA/CortexM3-DS/cortexm3ds_logic.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/CortexM3-DS/cortexm3ds_logic.v|
+!i113 0
+R7
+R2
+vCORTEXM3INTEGRATIONDS
+R23
+!i10b 1
+!s100 EXGXnDV^Z3:^@Q5XjL=B62
+IB:fSXVM5G=lTMPbFdX4]63
+R4
+R0
+w1500376678
+8C:/intelFPGA/lab4b/FPGA/CortexM3-DS/CORTEXM3INTEGRATIONDS.v
+FC:/intelFPGA/lab4b/FPGA/CortexM3-DS/CORTEXM3INTEGRATIONDS.v
+L0 24
+R6
+r1
+!s85 0
+31
+!s108 1575257878.000000
+!s107 C:/intelFPGA/lab4b/FPGA/CortexM3-DS/CORTEXM3INTEGRATIONDS.v|
+!s90 -reportprogress|30|-work|work|C:/intelFPGA/lab4b/FPGA/CortexM3-DS/CORTEXM3INTEGRATIONDS.v|
+!i113 0
+R7
+R2
+n@c@o@r@t@e@x@m3@i@n@t@e@g@r@a@t@i@o@n@d@s
+vdual_port_ram_sync
+R11
+!i10b 1
+!s100 6HX8IS:BILT:DV6AUQXAk1
+IAFCR<VKJ99IdYDIl:aO9W1
+R4
+R0
+w1500929778
+8C:/intelFPGA/lab4b/FPGA/AHB_VGA/dual_port_ram_sync.v
+FC:/intelFPGA/lab4b/FPGA/AHB_VGA/dual_port_ram_sync.v
+R17
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_VGA/dual_port_ram_sync.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_VGA/dual_port_ram_sync.v|
+!i113 0
+R7
+R2
+vFIFO
+R21
+!i10b 1
+!s100 I3QN[?OhQg99A?2DoLO^?1
+II35ZC;AH7CO5:>e64hN`o2
+R4
+R0
+w1375477768
+8C:/intelFPGA/lab4b/FPGA/AHB_UART/fifo.v
+FC:/intelFPGA/lab4b/FPGA/AHB_UART/fifo.v
+R8
+R6
+r1
+!s85 0
+31
+R22
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_UART/fifo.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_UART/fifo.v|
+!i113 0
+R7
+R2
+n@f@i@f@o
+vfont_rom
+R11
+!i10b 1
+!s100 VHUAHbMS8=22j^a>ooN?33
+IZJEj7zSE9;PC=eD8CFc`R0
+R4
+R0
+w1337048810
+8C:/intelFPGA/lab4b/FPGA/AHB_VGA/font_rom.v
+FC:/intelFPGA/lab4b/FPGA/AHB_VGA/font_rom.v
+R17
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_VGA/font_rom.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_VGA/font_rom.v|
+!i113 0
+R7
+R2
+vGenericCounter
+R11
+!i10b 1
+!s100 XkgJCm2CGeE]e[9SNadE?2
+IKLo[d@AWlA@FKd1<:z:f21
+R4
+R0
+w1381424110
+8C:/intelFPGA/lab4b/FPGA/AHB_VGA/counter.v
+FC:/intelFPGA/lab4b/FPGA/AHB_VGA/counter.v
+R8
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_VGA/counter.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_VGA/counter.v|
+!i113 0
+R7
+R2
+n@generic@counter
+vprescaler
+!s110 1575471132
+!i10b 1
+!s100 nSoTZ]Y[_mhDi0Rm@EOQZ3
+IF4dhb7Ai3K5RRj;ce9_[h0
+R4
+R0
+w1381778966
+8C:/intelFPGA/lab4b/FPGA/AHB_TIMER/prescaler.v
+FC:/intelFPGA/lab4b/FPGA/AHB_TIMER/prescaler.v
+R17
+R6
+r1
+!s85 0
+31
+!s108 1575471132.000000
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_TIMER/prescaler.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_TIMER/prescaler.v|
+!i113 0
+R7
+R2
+vtestbench
+!s110 1575257874
+!i10b 1
+!s100 S9AEQ`N:cHPC9NBYZ?LQJ3
+If?zN3Ube`FgQ5WKhS4i701
+R4
+R0
+w1530741616
+8C:/intelFPGA/lab4b/FPGA/testbench.v
+FC:/intelFPGA/lab4b/FPGA/testbench.v
+L0 3
+R6
+r1
+!s85 0
+31
+!s108 1575257874.000000
+!s107 C:/intelFPGA/lab4b/FPGA/testbench.v|
+!s90 -reportprogress|30|-work|work|C:/intelFPGA/lab4b/FPGA/testbench.v|
+!i113 0
+R7
+R2
+vUART_RX
+R21
+!i10b 1
+!s100 ha5`fnBAB;4@FH7QfkOR<1
+IAeiR4Tek0oRYT329S;NhG1
+R4
+R0
+w1337048742
+8C:/intelFPGA/lab4b/FPGA/AHB_UART/uart_rx.v
+FC:/intelFPGA/lab4b/FPGA/AHB_UART/uart_rx.v
+R8
+R6
+r1
+!s85 0
+31
+R22
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_UART/uart_rx.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_UART/uart_rx.v|
+!i113 0
+R7
+R2
+n@u@a@r@t_@r@x
+vUART_TX
+R21
+!i10b 1
+!s100 RgFbzG^TOEgg_LDLoViC[2
+IXjSV9i5FfU<VCe91SNmd51
+R4
+R0
+w1337048758
+8C:/intelFPGA/lab4b/FPGA/AHB_UART/uart_tx.v
+FC:/intelFPGA/lab4b/FPGA/AHB_UART/uart_tx.v
+R8
+R6
+r1
+!s85 0
+31
+R22
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_UART/uart_tx.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_UART/uart_tx.v|
+!i113 0
+R7
+R2
+n@u@a@r@t_@t@x
+vvga_console
+R11
+!i10b 1
+!s100 KToFFB3eKc5lJnFQ_P5hQ3
+IfYRHB7T1V9Ao;@NeZP7DC0
+R4
+R0
+w1500914066
+8C:/intelFPGA/lab4b/FPGA/AHB_VGA/vga_console.v
+FC:/intelFPGA/lab4b/FPGA/AHB_VGA/vga_console.v
+R8
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_VGA/vga_console.v|
+!s90 -reportprogress|30|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_VGA/vga_console.v|
+!i113 0
+R7
+R2
+vvga_image
+R11
+!i10b 1
+!s100 j_0JWEWWf]UePDa:9dDAm0
+I]lnM@2[DX9ID_iJLZ8nXj1
+R4
+R0
+w1500914064
+8C:/intelFPGA/lab4b/FPGA/AHB_VGA/vga_image.v
+FC:/intelFPGA/lab4b/FPGA/AHB_VGA/vga_image.v
+R8
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_VGA/vga_image.v|
+!s90 -reportprogress|30|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_VGA/vga_image.v|
+!i113 0
+R7
+R2
+vVGAInterface
+!s110 1575257886
+!i10b 1
+!s100 U5IoH?GA8>Q=h2fk`f8ci2
+I1=PZ84287ZeOnT2LMPYGk1
+R4
+R0
+w1381782228
+8C:/intelFPGA/lab4b/FPGA/AHB_VGA/vga_sync.v
+FC:/intelFPGA/lab4b/FPGA/AHB_VGA/vga_sync.v
+R17
+R6
+r1
+!s85 0
+31
+!s108 1575257886.000000
+!s107 C:/intelFPGA/lab4b/FPGA/AHB_VGA/vga_sync.v|
+!s90 -reportprogress|30|-work|work|C:/intelFPGA/lab4b/FPGA/AHB_VGA/vga_sync.v|
+!i113 0
+R7
+R2
+n@v@g@a@interface
