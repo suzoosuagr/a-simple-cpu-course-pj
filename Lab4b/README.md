@@ -1,14 +1,10 @@
-Jiyang Wang
-
-`SUID`: 835234162
-
 # CSE664 Lab4B Report
 
 ## STEP1
->Modify the file AHBTIMER.v to add logics to generate the timer interrupt signal, and add
+<!-- >Modify the file AHBTIMER.v to add logics to generate the timer interrupt signal, and add
 the interrupt clear register. Writing to this register will clear the interrupt, otherwise the
 interrupt will remain to be on.
-
+ -->
 First, define the address of clear interrupt register. Then add a new state called `st_intr` to manage the timer interrupt, and ready the timer to next load. When timer count to `0`, `timer_irq` enabled and trigger the interrupt. Interrupt cleared by writing `0x01` into `CLEADDR`(`0x5200000c`).
 
 ```verilog
@@ -73,7 +69,7 @@ First, define the address of clear interrupt register. Then add a new state call
 
 ```
 ## STEP2
->Modify the file AHBUART.v to add logics to generate the UART interrupt signal.
+<!-- >Modify the file AHBUART.v to add logics to generate the UART interrupt signal. -->
 
 When `RX_FIFO` is not empty, trigger the other wise clear. 
 
@@ -101,9 +97,9 @@ When `RX_FIFO` is not empty, trigger the other wise clear.
   ```
 
 ## STEP3
->Modify ARMSOC_TOP.v to connect the interrupt requests from TIMER and UART to the
+<!-- >Modify ARMSOC_TOP.v to connect the interrupt requests from TIMER and UART to the
 ARM core.
-
+ -->
 Connet to `IRQ`. Assign `timer_irq` to `[0]` and `uart_irq` to `[1]`.
 
 ```verilog
@@ -121,8 +117,8 @@ Connet to `IRQ`. Assign `timer_irq` to `[0]` and `uart_irq` to `[1]`.
 ```
 
 ## STEP4
->Complete the assembly program to configure the timer at the beginning, and implement
-the UART interrupt handler code.
+<!-- >Complete the assembly program to configure the timer at the beginning, and implement
+the UART interrupt handler code. -->
 
 Codes block below is the initialization of the timer and main loop. 
 
@@ -202,9 +198,9 @@ LOOP			SUBS	R2, R2, #1
 ```
 
 ## STEP5
-> Simulate the SoC using modelsim. Use the provided run.do to touch initialize some
+<!-- > Simulate the SoC using modelsim. Use the provided run.do to touch initialize some
 internal signals. You should see that timer interrupts generate approximately every
-2.6us, and the UART interrupt generates at approximate 495 us.
+2.6us, and the UART interrupt generates at approximate 495 us. -->
 
 The periods of both interrupt signals are close to reference values.
 
@@ -215,14 +211,14 @@ The periods of both interrupt signals are close to reference values.
 <center> <small> 609.605-90.005=519.6us </small>  </center>
 
 ## STEP6
->Measure how long it takes for the CPU to process the UART interrupt
+<!-- >Measure how long it takes for the CPU to process the UART interrupt -->
 
 ![figure3](imgs/6_1.png)
 <center> <small> CPU needs 24.06 us to handle UART interrupt</small>  </center>
 
 ## STEP7
->Switch the interrupt priority of TIMER and UART, and check again how long does it take
-to serve the UART interrupt.
+<!-- >Switch the interrupt priority of TIMER and UART, and check again how long does it take -->
+<!-- to serve the UART interrupt. -->
 
 From below figure, we can find that when we swap the priority setting of this two irqs. The uart won't be interrupted when it been triggered. As a result CPU required less time to handle uart interrupt. 
 

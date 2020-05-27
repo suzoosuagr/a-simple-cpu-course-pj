@@ -1,15 +1,11 @@
-Jiyang Wang
-
-`SUID`: 835234162
-
 # CSE664 Lab4A Report
 
 ## Q1
->Run the simulation, take a look of the waveform and analyze the signal activities in the 
+<!-- >Run the simulation, take a look of the waveform and analyze the signal activities in the 
 AHB transactions when the CPU writes to the LED register. Report the exact time of the 
 address phase and data phase of the first 2 LED write transactions. Also report what 
 signals are asserted (transmitted) during those two phases. 
-
+ -->
 ![Figure1](imgs/1_1.png)
 <center> <small>Figure1</small> </center>
 
@@ -23,8 +19,8 @@ From Figure 2, we can know that , for the second transaction, the address phase 
 In address phase, the address of peripheral devices were transmitted and in data phase the data to control LED been transmitted. 
 
 ## Q2
->Instead of writing to address 0x5000_0000, write to 0x5000_0010, and observe the LED 
-signals. What do you see? 
+<!-- >Instead of writing to address 0x5000_0000, write to 0x5000_0010, and observe the LED 
+signals. What do you see?  -->
 
 Figure 1 shows when we write to `0x50000000`, Figure 3 shows when we write to `0x50000010`. Compare Figure 2 and 3 we can see the LED perform same. 
 
@@ -32,12 +28,12 @@ Figure 1 shows when we write to `0x50000000`, Figure 3 shows when we write to `0
 <center> <small>Figure3</small> </center>
 
 ## Q3
->. The LED register is currently mapped to memory address 0x5000_0000. Modify the 
+<!-- >. The LED register is currently mapped to memory address 0x5000_0000. Modify the 
 source code and hardware design to map this register to 0x5700_0000. Simulate the 
 whole system again and report the waveform of your simulation. Include the waveform 
 in the report. The waveform should contain all aforementioned system bus signals and 
 the LED signals as a proof that the address mapping has taken place and the LED register 
-is written correctly.  
+is written correctly.   -->
 
 From `AHBDCD.v`
 
@@ -77,7 +73,7 @@ Now the LED will react operations happened to `0x57000000`, Result shown in Figu
 
 ## Q4
 
->Based on (2), further modify the LED module and add an additional mask register that is 
+<!-- >Based on (2), further modify the LED module and add an additional mask register that is 
 read and writable by the CPU at memory address 0x5700_0004. A “0” in the mask 
 register will prevent the corresponding bit in the LED register to be written (i.e. the 
 corresponding bit in LED register will keep its previous value instead of being modified.) 
@@ -85,7 +81,7 @@ Modify your software program to test the mask function. You need provide a brief
 description of the steps that were taken in your test program, (e.g. step 1: write a 0Xff 
 to LED register, step 2: write a 0x0F to the mask register, step 3: write a 0Xaa to LED 
 register. Step 4: observe that the value in LED register is 0xaf.) Report the waveform for 
-those steps.
+those steps. -->
 
 **ARGUE**, Since The `0` in mask means keep it's previous value. Which means only update the `1` corresponding bits. So in questions, The step 4 should be `0xfa` instead of `0xaf` 
 

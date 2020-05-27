@@ -28,6 +28,9 @@ course project
 [3:0][3:0] === [ops][reg/imm]
 
 ## FSM diagram
+
+(some typo here.)
+
 ![sfm](./imgs/sfm.png)
 
 |State|Description|
@@ -39,18 +42,3 @@ course project
 |S3|update acc|
 |S4|update reg|
 |S5|HALT|
-
-## changelog
-@11/18/2019 10:40
-1. `test_bench.v` : The address in follows pc.
-2. `accum.v` : fixed the sel_acc mechanism. 
-3. `alu.v` : changed the always rule update alu's registers only when `sel_alu` is none zero
-4. `controller.v` removed.
-5. `controller_v1.v` fixed some bugs.
-6. `test_code.txt` added two //nop command to make `JC` command work properly.
-7. `test_bench.v` Using pc to access address. blocked the self check part. 
-8. `test_codes.v` Removed
-
-**TODO**:
-- fix `test_code.txt` following the guideness of waveform.
-- activate the `test_bench.v`'s raise error feature.
